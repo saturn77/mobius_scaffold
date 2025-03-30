@@ -1,0 +1,20 @@
+[package]
+name       = "scaffold-egui-app"
+version    = "0.1.0"
+edition    = "2021"
+authors    = ["James Bonanno <atlantix-eda@proton.me>"]
+repository = "https://github.com/saturn77/mobius_scaffold"
+categories = ["gui", "development-tools", "development-tools::build-utils"]
+keywords   = ["egui-framework", "eframe", "egui-example", "desktop"]
+include    = ["LICENSE-MIT", "**/*.rs", "Cargo.toml"]
+
+
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--generate-link-to-definition"]
+
+[dependencies]
+tera = "1.19"
+inquire = "0.6"
+clap = { version = "4.4", features = ["derive"] }
